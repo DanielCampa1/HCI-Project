@@ -1,0 +1,41 @@
+{% load static %}
+
+<!--This is a project level html file that contains the overall -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'project_apps/css/styles.css' %}">
+    <script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+  
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+
+        <div class="left-section">
+            FOURTH FOODS LOGO
+        </div>
+
+        <div class="middle-section">
+            <ul class="navigation">
+                <li><a href="#" class="navigator">Home</a></li>
+                <li><a href="#" class="navigator">Features</a></li>
+                <li><a href="#" class="navigator">About</a></li>
+            </ul>
+        </div>
+
+        <div class="right-section">
+            <button type="button" class="login-button">Login</button>
+            <button type="button" class="signup-button">Sign-up</button>
+        </div>
+      </div>
+
+      {% block content %}
+      
+      {% endblock content %}
+      
+    </body>
+</html>
