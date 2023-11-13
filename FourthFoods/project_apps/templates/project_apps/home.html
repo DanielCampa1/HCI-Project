@@ -1,7 +1,40 @@
-<head><title>Homepage</title></head>
 {% extends "base.html" %}
+{% load static %}
+
+{% block static_head %}
+    <link rel="stylesheet" href="{% static 'project_apps/css/home.css' %}">
+{% endblock  %}
+
+{% block title %}
+    <title>Homepage</title>
+{% endblock  %}
+
 
 
 {% block content %}
 
-{% endblock content %}
+
+<div class="space">
+    <div class="blank-space">.</div>
+    <div>gray</div>
+</div>
+
+    <div class="body-home">
+    <div class="text-left">
+        <h1>Welcome to... <br> Fourth Foods!</h1>
+    </div>
+    <div>
+        <img class="image-right" src="home1.webp" alt="Placeholder">
+    </div>
+</div>
+
+<div class="space">
+    <div class="blank-space">white</div>
+    <div>gray</div>
+    <div class="blank-space">b</div>
+</div>
+
+{% endblock %}
+
+
+

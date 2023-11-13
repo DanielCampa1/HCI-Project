@@ -1,0 +1,42 @@
+.body-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 25px;
+    margin-left: 20px;
+    column-gap: 45px;    
+}
+.space{
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    background-color: rgb(16, 139, 240);
+    color: rgb(16, 139, 240);
+    row-gap: 45px;
+}
+
+.text-left{
+    margin-left: 5%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(25, 132, 219);
+    margin-top: 40px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    }
+
+.image-right{
+    margin-right: 10%;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.blank-space{
+    background-color: white;
+    color: white;
+}
+
+.white{
+    color: white;
+}

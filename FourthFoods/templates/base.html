@@ -9,8 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'project_apps/css/styles.css' %}">
     <script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
-  
-    <title>Document</title>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+
+    {% block static_head %}
+            <!--Use to add static files within other html files -->
+
+    {% endblock  %}
+
+
+    {% block title %}
+        <!--Use to change the title of the new html view -->
+        <title>HCI Project</title>
+
+    {% endblock  %}
 </head>
 <body>
     <div class="header">
@@ -21,9 +32,9 @@
 
         <div class="middle-section">
             <ul class="navigation">
-                <li><a href="#" class="navigator">Home</a></li>
-                <li><a href="#" class="navigator">Features</a></li>
-                <li><a href="#" class="navigator">About</a></li>
+                <li><a href="{% url 'project_apps:home' %}" class="navigator">Home</a></li>
+                <li><a href="{% url 'project_apps:features' %}" class="navigator">Features</a></li>
+                <li><a href="{% url 'project_apps:about' %}" class="navigator">About</a></li>
             </ul>
         </div>
 
@@ -33,9 +44,11 @@
         </div>
       </div>
 
+
+      
       {% block content %}
       
-      {% endblock content %}
+      {% endblock %}
       
     </body>
 </html>
