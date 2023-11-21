@@ -30,6 +30,25 @@
             FOURTH FOODS LOGO
         </div>
 
+        {% if user.is_authenticated %}
+        <!-- Logged In Nav Bar-->
+        <div class="middle-section">
+            <ul class="navigation">
+                <li><a href="{% url 'project_apps:home' %}" class="navigator">Home</a></li>
+                <li><a href="{% url 'project_apps:create' %}" class="navigator">Create</a></li>
+                <li><a href="{% url 'project_apps:history' %}" class="navigator">History</a></li>
+            </ul>
+
+        </div>
+
+        <div class="right-section">
+            <ul class="navigation">
+                <li><a href="#" class="navigator">Account</a></li>
+            </ul>
+        </div>
+        
+        {% else %}
+        <!--Not Logged In Nav Bar-->
         <div class="middle-section">
             <ul class="navigation">
                 <li><a href="{% url 'project_apps:home' %}" class="navigator">Home</a></li>
@@ -39,9 +58,15 @@
         </div>
 
         <div class="right-section">
-            <button type="button" class="login-button">Login</button>
+            <a href="{% url 'login' %}"> 
+                <button type="button" class="login-button">Login</button>
+            </a>
+            <a href="{% url 'project_apps:signup' %}">
             <button type="button" class="signup-button">Sign-up</button>
+            </a>
         </div>
+        {% endif %}
+        
       </div>
 
 

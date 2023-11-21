@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block static_head %}
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="{% static 'project_apps/css/createChart.css' %}">
+{% endblock  %}
+
+{% block title %}
+    <title>Create Inventory</title>
+{% endblock  %}
+
+{% block content %}
+
+<div class="table-create">
+    <div class="left-chart">
+        <div class="graph_position">
+            <div id="myDiv"></div>
+        </div>
+    </div>
+    <div class="right-form">
+        <div class="text-center">
+            <h1>Create New Graph</h1>
+        </div>
+
+        <div>
+            <form action="">
+
+                <div class="text-center">
+                    <label for="start">Select a Month:</label>
+                    <input type="month" id="start" name="start" min="2018-03" value="2023-11" />
+                </div>
+                
+                <hr class="line1">
+
+                <div>
+                    <h2 class="text-center">Produce</h2>
+                    <input required name="inventory_p" id="produce" type="text"  placeholder="Amount of items">
+                    <input required name="cost_p" id="product1" type="text"  placeholder="Current Total">
+
+                </div>
+
+                <div>
+                    <h2 class="text-center">Meat </h2>
+                    <input required name="inventory_m" id="meat" type="text"  placeholder="Amount of items">
+                    <input required name="cost_m" id="product2" type="text"  placeholder="Current Total">
+                </div>
+
+                <div>
+                    <h2 class="text-center">Miscellaneous</h2>
+                    <label for="miscellaneous"></label>
+                    <input required name="inventory_mi" id="miscellaneous" type="text"  placeholder="Amount of items">
+                    <input required name="cost_mi" id="product3" type="text"  placeholder="Current Total">
+                </div>
+
+                <hr class="line1">
+
+                <div class="submit-btn">
+                    <input type="submit" class="submit" value="Submit" onclick="updateGraph()">
+                    <input type="reset" class="reset" value="Reset">
+                </div>
+                
+            </form>    
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="{% static 'project_apps/js/pie_chart.js' %}"></script>
+
+{% endblock  %}

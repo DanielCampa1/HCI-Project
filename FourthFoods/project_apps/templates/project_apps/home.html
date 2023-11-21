@@ -13,26 +13,37 @@
 
 {% block content %}
 
+{% if user.is_authenticated %}
+    <!--Logged In-->
+    <p>Logged In</p>
+    <p>Welcome, {{user.get_username}}</p>
+    <a href="{% url 'logout' %}?next={{request.path}}">LOGOUT HERE</a>
 
-<div class="space">
-    <div class="blank-space">.</div>
-    <div>gray</div>
-</div>
-
-    <div class="body-home">
-    <div class="text-left">
-        <h1>Welcome to... <br> Fourth Foods!</h1>
+{% else %}
+    <!--Not Logged In-->
+    <div class="space">
+        <div class="blank-space">.</div>
+        <div>gray</div>
     </div>
-    <div>
-        <img class="image-right" src="home1.webp" alt="Placeholder">
-    </div>
-</div>
 
-<div class="space">
-    <div class="blank-space">white</div>
-    <div>gray</div>
-    <div class="blank-space">b</div>
-</div>
+        <div class="body-home">
+        <div class="text-left">
+            <h1>Welcome to... <br> Fourth Foods!</h1>
+        </div>
+        <div>
+            <img class="image-right" src="home1.webp" alt="Placeholder">
+        </div>
+    </div>
+
+    <div class="space">
+        <div class="blank-space">white</div>
+        <div>gray</div>
+        <div class="blank-space">b</div>
+    </div>
+{% endif %}
+
+
+
 
 {% endblock %}
 
