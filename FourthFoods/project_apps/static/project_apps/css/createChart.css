@@ -4,29 +4,30 @@
 }
 
 .left-chart{
-    height: 690px;
-    margin-top: 25px;
+    height: 660px;
+    margin-top: 40px;
     margin-bottom: 20px;
     margin-left: 30px;
     border: 2px solid;
+    background-color: white; 
 }
 
 .right-form {
     height: 690px;
-    margin: 25px 30px 20px 30px;   
+    margin: 25px 30px 20px 30px;  
+    background-color: rgb(59,152,240); 
     border: 2px solid;
 }
 
 .graph_position {
-    width: 90%; /* Can be in percentage also. */
-    height: 90%;
-    margin: 10px 0;
-    margin-left: 40px;
+    width: 100%; /* Can be in percentage also. */
+    height: 100%;
     border-radius: 20px;
 }
 
 .text-center{
     text-align: center;
+    color: rgb(255,251,0);
 }
 
 hr.line1 {
@@ -38,6 +39,9 @@ hr.line1 {
 
 }
 
+
+
+
 input[type=text] {
     text-align: center;
     width: 40%;
@@ -48,6 +52,11 @@ input[type=text] {
     margin-left: 40px;
 }
 
+::placeholder {
+    color: black;
+    opacity: 5; 
+ }
+
 input[type=submit], input[type=reset]{
     width: 90%;
     padding: 10px;
@@ -55,7 +64,9 @@ input[type=submit], input[type=reset]{
     margin-left: 45px;
     border-radius: 4px;
     border: none;
-    background-color: cadetblue;
-    font-size: 20px;
+    color: white;
+    background-color: rgb(240,66,66);
+    font-size: 30px;
     cursor: pointer;
+    font-family: 'Monaco';
 }

@@ -15,31 +15,29 @@
 
 {% if user.is_authenticated %}
     <!--Logged In-->
+    <hr>
+
     <p>Logged In</p>
     <p>Welcome, {{user.get_username}}</p>
     <a href="{% url 'logout' %}?next={{request.path}}">LOGOUT HERE</a>
 
 {% else %}
     <!--Not Logged In-->
-    <div class="space">
-        <div class="blank-space">.</div>
-        <div>gray</div>
-    </div>
+
+    <hr>
 
         <div class="body-home">
         <div class="text-left">
-            <h1>Welcome to... <br> Fourth Foods!</h1>
+            <h1>Welcome to... <br>  Fourth Foods!</h1>
         </div>
         <div>
-            <img class="image-right" src="home1.webp" alt="Placeholder">
+            <img class="image-right" src="{% static 'project_apps/images/home1.webp' %}" alt="Placeholder">
         </div>
     </div>
+    <hr>
+    <hr>
+    <hr>
 
-    <div class="space">
-        <div class="blank-space">white</div>
-        <div>gray</div>
-        <div class="blank-space">b</div>
-    </div>
 {% endif %}
 
 

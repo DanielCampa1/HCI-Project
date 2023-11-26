@@ -5,37 +5,38 @@
     margin-left: 20px;
     column-gap: 45px;    
 }
-.space{
-    display: grid;
-    grid-row: 1fr 1fr 1fr;
-    background-color: rgb(16, 139, 240);
-    color: rgb(16, 139, 240);
-    row-gap: 45px;
-}
 
-.text-left{
+.text-left{ 
     margin-left: 5%;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
     font-size: 30px;
-    color: rgb(25, 132, 219);
-    margin-top: 40px;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: black;
+    color: white;
+    max-width: 100%;
+    text-align: center;
     }
-
+h1 {
+    padding-top: 20%;
+    height: 80%;
+    width: 100%;
+}
+hr{
+    border: 30px solid rgb(240, 66, 66);
+    border-radius: 5px;
+}
 .image-right{
     margin-right: 10%;
-    width: 100%;
+    width: 88%;
     height:100%;
     object-fit: cover;
 }
 
-.blank-space{
-    background-color: white;
-    color: white;
+img {
+    width: 80%;
+    height: 100%;
 }
+
 
 .white{
     color: white;

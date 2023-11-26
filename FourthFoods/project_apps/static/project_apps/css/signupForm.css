@@ -1,5 +1,6 @@
 body{
-    background-color: blue;
+    background-color: rgb(14, 128, 236);    
+
 }
 
 .register {
@@ -10,12 +11,12 @@ body{
     transform: translate(-50%, -50%);
     margin: auto;
     align-items: center;
-    background-color: aqua;
     width: 300px;
     height: 600px;
     padding: 15px;
     border-radius: 20px;
-    
+    background-color: rgb(59,152,240);    
+
 }
 
 .text-center{
@@ -23,6 +24,7 @@ body{
 }
 
 input[type=text] {
+
     display: inline-block;
     width: 100%;
     padding: 10px;
@@ -30,6 +32,7 @@ input[type=text] {
     border-radius: 15px;
     border: 2px solid;
     margin: 15px 0;
+
 }
 
 input[type=password] {
@@ -40,7 +43,13 @@ input[type=password] {
     border-radius: 15px;
     border: 2px solid;
     margin: 10px 0;
+
 }
+
+::placeholder {
+    color: black;
+    opacity: 5; 
+  }
 
 input[type=submit]{
     width: 100%;
@@ -48,7 +57,8 @@ input[type=submit]{
     margin: 10px 0;
     border-radius: 4px;
     border: none;
-    background-color: cadetblue;
+    color: white;
+    background-color: rgb(240,66,66);
     font-size: 20px;
     cursor: pointer;
 }

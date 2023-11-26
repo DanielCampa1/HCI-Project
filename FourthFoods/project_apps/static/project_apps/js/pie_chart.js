@@ -9,7 +9,7 @@
 
   var layout = {
   height: 630,
-  width: 700,
+  width: 750,
   margin: {"t": 10, "b": 0, "l": 0, "r": 0},
   showlegend: false
   }

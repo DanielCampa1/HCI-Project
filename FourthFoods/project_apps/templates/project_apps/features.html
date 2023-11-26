@@ -1,6 +1,62 @@
 {% extends "base.html" %}
+{% load static %}
 
+{% block static_head %}
+    <link rel="stylesheet" href="{% static 'project_apps/css/features.css' %}">
+
+{% endblock %}
 
 {% block content %}
-<p>featuresd</p>
-{% endblock  %}
+<div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>Pricing</b></h1>
+        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Can't Be Beat</b></h1>
+        <p>
+        Our comeptitors charge a hefty fee, but not us. The application is 100% free to use, you only have to sign up. No card necessary.
+        </p>
+      </div>
+      <div class="column-33">
+          <img src="C:\Users\19123\Downloads\Money.png" alt= "money" width="335" height="471">
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container" style="background-color:#f1f1f1">
+    <div class="row">
+      <div class="column-33">
+        <img src="C:\Users\19123\Downloads\Calcuator.png" alt="calc" width="335" height="471">
+      </div>
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>Budget</b></h1>
+        <h1 class="large-font" style="color:red;"><b>Never Stray</b></h1>
+        <p>
+           Never fear going over budget again when you're able to preset an overbudget alert as you plan out your inventory.
+       
+       
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>History</b></h1>
+        <h1 class="large-font" style="color:MediumSeaGreen;"><b>At Your Finger Tips</b></h1>
+        <p>
+          Keep track of your monthly expenses and see exactly where your money is going. Our product provides useful charts to allow you to track 
+          the areas your money is mostly goung to each month.
+          
+        
+       </p>
+     
+      </div>
+      <div class="column-33">
+          <img src="C:\Users\19123\Downloads\Notebook.png" alt="notebook" width="335" height="471" >
+      </div>
+    </div>
+  </div>
+  {% endblock  %}

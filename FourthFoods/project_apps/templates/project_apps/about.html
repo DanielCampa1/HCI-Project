@@ -1,6 +1,48 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% block static_head %}
+    <link rel="stylesheet" href="{% static 'project_apps/css/about.css' %}">
+
+{% endblock %}
 
 
 {% block content %}
-<p>abouts</p>
+<div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>Daniel</b></h1>
+        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Can't Be Beat</b></h1>
+        <p>
+       Over the past ten years, I've worked in a large variety of restraunts. From server to fry cook, I've seen it all.
+   But most importantly I saw the issue with inventory among smaller restruants. Bigger chains could take the risk of over ordering or throwing out waste, but 
+   not the mom and pop shops. I've witnessed countless moment of disgrunteled workers and stressed managers over supply issues: "half the pantry has to be 86",
+   "we're too far over budget to order more this week", etc. I'm hoping my product can reduce those moments for everyone involved.
+        </p>
+      </div>
+      <div class="column-33">
+          <img src="C:\Users\19123\Pictures\Screenshots\Daniel.jpg" alt="Daniel" width="335" height="471">
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="container">
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>Danyelle</b></h1>
+        <h1 class="large-font" style="color:MediumSeaGreen;"><b>Can't Be Beat</b></h1>
+        <p>
+        As a perosn who has only worked in smaller chains, they hold a special place in my heart.And anyone who has worked in a small place knows that more often than not
+  its all hands on deck when it comes to dealing with inventory. One of my favorite systems was one where we all wrote what was needed on a giant chalkboard and things were crossed out
+  once they could afford to order it. In a way. I'm trying to bring that giant chalkboard to the internet, hoping it can provide a sense of ease
+  to smaller chains as they track their inventory spenses.
+        </p>
+      </div>
+      <div class="column-33">
+          <img src="C:\Users\19123\OneDrive\Pictures\IMG_5388.JPG" alt="Danyelle" width="335" height="471">
+      </div>
+    </div>
+  </div>
 {% endblock  %}
